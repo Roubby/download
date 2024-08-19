@@ -37,14 +37,14 @@ export default defineUserConfig({
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
         // 仓库所有者的用户名
-        user: "jianjianai",
+        user: "Roubby",
         // 仓库所有者的仓库名
-        repository: "KnapsackToGo4"
+        repository: "download"
       }),
     },
     {
       mountPath: "/",
-      analysis: githubReleasesFilesAnalysis({ user: "jianjianai", repository: "FList" }),
+      analysis: githubReleasesFilesAnalysis({ user: "Roubby", repository: "download" }),
       // 下载代理配置,支持多个平台，参考:https://jjaw.cn/2024/8/3/flist-config-porxy/
       // 这个是为了解决github的国内下载慢的问题，和跨域问题，建议配置，不然pdf，txt，md等文件因为跨域无法预览
       // 如果你使用的不是 cloudflare Pages 部署需要删掉这一行，因为如果不是cloudflare Pages部署，这个代理是无法正常工作的
@@ -60,40 +60,40 @@ export default defineUserConfig({
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
-    {
-      mountPath: "/huggingface测试",
-      analysis: huggingFaceDatasetsAnalysis({
-        userName: "Open-Orca",
-        datasetsName: "OpenOrca",
-        branchName: "main",
-        path: "/",
-        //最大深度,如果文件夹有很多层最大递归解析多少层，默认10
-        maxDeep: 3
-      }),
-    },
-    {
-      mountPath: "/gitee测试/发行版",
-      analysis: giteeReleasesFilesAnalysis({
-        user: "jja8",
-        repository: "flist-test",
-        direction: "desc"
-      })
-    },
-    {
-      mountPath: "/gitee测试/仓库",
-      analysis: giteeReposAnalysis({
-        user: "jja8",
-        repository: "flist-test"
-      }),
-    },
-    {
-      mountPath: "/ProgrammingVTuberLogos",
-      analysis: githubReposAnalysis({
-        user: "Aikoyori",
-        repository: "ProgrammingVTuberLogos",
-      }),
-      downProxy: cloudflarePagesDownProxy()
-    },
-    // ... 可以配置多个挂载路径和仓库，以此类推
+    // {
+    //   mountPath: "/huggingface测试",
+    //   analysis: huggingFaceDatasetsAnalysis({
+    //     userName: "Open-Orca",
+    //     datasetsName: "OpenOrca",
+    //     branchName: "main",
+    //     path: "/",
+    //     //最大深度,如果文件夹有很多层最大递归解析多少层，默认10
+    //     maxDeep: 3
+    //   }),
+    // },
+    // {
+    //   mountPath: "/gitee测试/发行版",
+    //   analysis: giteeReleasesFilesAnalysis({
+    //     user: "jja8",
+    //     repository: "flist-test",
+    //     direction: "desc"
+    //   })
+    // },
+    // {
+    //   mountPath: "/gitee测试/仓库",
+    //   analysis: giteeReposAnalysis({
+    //     user: "jja8",
+    //     repository: "flist-test"
+    //   }),
+    // },
+    // {
+    //   mountPath: "/ProgrammingVTuberLogos",
+    //   analysis: githubReposAnalysis({
+    //     user: "Aikoyori",
+    //     repository: "ProgrammingVTuberLogos",
+    //   }),
+    //   downProxy: cloudflarePagesDownProxy()
+    // },
+    // // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
