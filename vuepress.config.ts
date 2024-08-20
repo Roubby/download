@@ -55,9 +55,9 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "图片/测试图片": "https://github.com/Roubby/download/releases/download/file/pink.png",
+        "测试图片": "https://github.com/Roubby/download/releases/download/file/pink.png",
         // "/文件树测试/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
-        "视频/测试视频": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
+        "测试视频": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
