@@ -57,7 +57,7 @@ export default defineUserConfig({
       analysis: fileUrlTreeAnalysis({
         "测试图片.png": "https://github.com/Roubby/download/releases/download/file/pink.png",
         // "/文件树测试/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
-        "测试视频.mp3": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
+        "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
