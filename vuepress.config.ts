@@ -65,11 +65,20 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "markdown简单语法.md": "https://gitee.com/xiaohong321/download/releases/download/download/markdown.md",
-        "大数据思维导图.pdf": "https://gitee.com/xiaohong321/download/releases/download/download/%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%20%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%A7%E6%A2%B3%E7%90%86.pdf",
+        "迷你导航项目": "https://github.com/Roubby/file_download/releases/download/OpenProject/default.7z",
         // "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
+    },
+    // 以下是没有代理的文件
+    {
+      mountPath: "/",
+      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
+      analysis: fileUrlTreeAnalysis({
+        "markdown简单语法.md": "https://gitee.com/xiaohong321/download/releases/download/download/markdown.md",
+        '大数据思维导图.pdf' : 'https://gitee.com/xiaohong321/download/releases/download/download/bigdatqa.pdf'
+      }),
+      // downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
     // {
     //   mountPath: "/huggingface测试",
