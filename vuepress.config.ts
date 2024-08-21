@@ -61,7 +61,16 @@ export default defineUserConfig({
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
-
+    {
+      mountPath: "/测试文档",
+      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
+      analysis: fileUrlTreeAnalysis({
+        "知识资源共享库.xlsl": "https://gitee.com/xiaohong321/download/releases/download/%E6%94%BE%E6%96%87%E6%A1%A3%E7%9A%84/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%B5%84%E6%BA%90%E5%BA%93.xlsx",
+        // "/文件树测试/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
+        // "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
+      }),
+      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
+    },
     // {
     //   mountPath: "/huggingface测试",
     //   analysis: huggingFaceDatasetsAnalysis({
