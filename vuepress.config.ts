@@ -61,16 +61,7 @@ export default defineUserConfig({
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
-    {
-      mountPath: "/网站",
-      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-      analysis: fileUrlTreeAnalysis({
-        "共享GPT-4": "https://www.opkfc.com/list",
-        // "/文件树测试/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
-        // "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
-      }),
-      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
-    },
+
     // {
     //   mountPath: "/huggingface测试",
     //   analysis: huggingFaceDatasetsAnalysis({
