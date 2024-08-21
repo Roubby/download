@@ -65,7 +65,7 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "迷你导航项目": "https://github.com/Roubby/file_download/releases/download/OpenProject/default.7z",
+        "迷你导航项目.7z": "https://github.com/Roubby/file_download/releases/download/OpenProject/default.7z",
         // "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
@@ -78,7 +78,7 @@ export default defineUserConfig({
         "markdown简单语法.md": "https://gitee.com/xiaohong321/download/releases/download/download/markdown.md",
         '大数据思维导图.pdf' : 'https://gitee.com/xiaohong321/download/releases/download/download/bigdatqa.pdf'
       }),
-      // downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
+      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
     // {
     //   mountPath: "/huggingface测试",
