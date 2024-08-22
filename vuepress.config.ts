@@ -51,28 +51,32 @@ export default defineUserConfig({
     //   // 如果你使用的不是 cloudflare Pages 部署需要删掉这一行，因为如果不是cloudflare Pages部署，这个代理是无法正常工作的
     //   downProxy: cloudflarePagesDownProxy(),
     // },
-    {
+
+    { //      ".mp3": "",
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
         "我好像在哪里见过你.mp3": "https://m801.music.126.net/20240822142156/2f2f98f836d5796ac69dcb5dfcb4921d/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28481681358/3770/e3f9/2670/46767d3133a5fd930d1e6681d50c314f.mp3?authSecret=0000019178a8d7161e4d0a3b201a23bb",
+        "天外来物.mp3": "https://m801.music.126.net/20240822142413/95058965b06452f67472b19b56aa1ac1/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/25981409748/cd40/0fa2/f472/974fdfde535427de9ff6562124722d5c.mp3?authSecret=0000019178aaec740f4f0a3b200c1bca",
+        "演员.mp3": "https://m801.music.126.net/20240822142721/a615a49b8e39b47bf7755d5b9f4b90ee/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28481681523/a777/e66c/684b/077b8e3242636865d62c852761ca654b.mp3?authSecret=0000019178adcc6606b80a3b20181cc5",
         // "/文件树测试/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
         "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
-    // {
-    //   mountPath: "/开源导航项目",
-    //   // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-    //   analysis: fileUrlTreeAnalysis({
-    //     "迷你导航.gz": "https://github.com/Mereithhh/van-nav/releases/download/v1.9.2/van-nav_1.9.2_Windows_x86.tar.gz",
-    //     "静态导航.zip": "https://github.com/cifaz/nav-site/releases/download/v0.0.18/nav-site_0.0.18_Windows_x86_64.zip",
-    //     "更多导航.html": "https://gitee.com/xiaohong321/download/releases/download/download/product.html",
-    //     "说明书1.jpg":"https://gitee.com/xiaohong321/download/releases/download/download/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.jpg",
-    //     "说明书2.jpg":"https://gitee.com/xiaohong321/download/releases/download/download/%E8%AF%B4%E6%98%8E%E4%B9%A6%20.jpg"
-    //   }),
+    {
+      mountPath: "/",
+      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
+      analysis: fileUrlTreeAnalysis({
+           "童话镇.mp3": "https://m801.music.126.net/20240822142811/da8574325ba105a14f5ea33af1801a6c/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/44999386841/fd1e/8b86/a419/a05bc3c522a248fba2ee63d7c8d779f4.mp3?authSecret=0000019178ae8d371d840a3b2010002f",
+           "一人行 - 曾舜晞.mp3": "https://m801.music.126.net/20240822143025/fd838130dec3d616e21067f20e7998ee/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/45185942865/4526/9d0c/eae2/3aff9b42c141a1b2420a4c27828f1170.mp3?authSecret=0000019178b098950ec20a3b201a23bb"
+      //      ".mp3": ""
+      //      ".mp3": ""
+      //      ".mp3": ""
+
+      }),
     //   downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
-    // },
+    },
     // 以下是没有代理的文件
     // {
     //   mountPath: "/",
