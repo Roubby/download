@@ -53,7 +53,7 @@ export default defineUserConfig({
     // },
 
     { //      ".mp3": "",
-      mountPath: "/",
+      mountPath: "/-薛之谦",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
         " - 我好像在哪见过你.mp3" : "https://m801.music.126.net/20240822213733/dd8391f3baf1d3a00b8a2cac426b597c/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28481681358/3770/e3f9/2670/46767d3133a5fd930d1e6681d50c314f.mp3?authSecret=000001917a37a956011e0a3b200c1bca",
