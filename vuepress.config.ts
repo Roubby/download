@@ -66,7 +66,8 @@ export default defineUserConfig({
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
         "迷你导航.7z": "https://github.com/Roubby/file_download/releases/download/OpenProject/default.7z",
-        "静态导航.7z": "https://github.com/Roubby/file_download/releases/download/OpenProject/van-nav.7z"
+        "静态导航.7z": "https://github.com/Roubby/file_download/releases/download/OpenProject/van-nav.7z",
+        "更多导航.txt": "https://gitee.com/xiaohong321/download/releases/download/download/%E4%BC%98%E8%B4%A8%E5%AF%BC%E8%88%AA%E7%BB%98.txt",
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
