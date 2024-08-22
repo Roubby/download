@@ -65,9 +65,11 @@ export default defineUserConfig({
       mountPath: "/开源导航项目",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "迷你导航.7z": "https://github.com/Roubby/file_download/releases/download/OpenProject/nav-site.7z",
-        "静态导航.7z": "https://github.com/Roubby/file_download/releases/download/OpenProject/van-nav.7z",
-        "更多导航.txt": "https://gitee.com/xiaohong321/download/releases/download/download/%E4%BC%98%E8%B4%A8%E5%AF%BC%E8%88%AA%E7%BB%98.txt",
+        "迷你导航.gz": "https://github.com/Mereithhh/van-nav/releases/download/v1.9.2/van-nav_1.9.2_Windows_x86.tar.gz",
+        "静态导航.zip": "https://github.com/cifaz/nav-site/releases/download/v0.0.18/nav-site_0.0.18_Windows_x86_64.zip",
+        "更多导航.html": "https://gitee.com/xiaohong321/download/releases/download/download/product.html",
+        "说明书1.jpg":"https://gitee.com/xiaohong321/download/releases/download/download/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.jpg",
+        "说明书2.jpg":"https://gitee.com/xiaohong321/download/releases/download/download/%E8%AF%B4%E6%98%8E%E4%B9%A6%20.jpg"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
