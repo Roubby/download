@@ -31,18 +31,18 @@ export default defineUserConfig({
   shouldPrefetch: true,
   // 主题配置 FileList 是 vuepress 的一个主题，文件展示的功能全部由这个主题提供。
   theme: FileList([
-    {
-      // 挂载路径
-      mountPath: "/",
-      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
-      analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
-        user: "Roubby",
-        // 仓库所有者的仓库名
-        repository: "download"
-      }),
-      downProxy: cloudflarePagesDownProxy(),
-    },
+    // {
+    //   // 挂载路径
+    //   mountPath: "/",
+    //   // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+    //   analysis: githubReleasesFilesAnalysis({
+    //     // 仓库所有者的用户名
+    //     user: "Roubby",
+    //     // 仓库所有者的仓库名
+    //     repository: "download"
+    //   }),
+    //   downProxy: cloudflarePagesDownProxy(),
+    // },
     // {
     //   mountPath: "/",
     //   analysis: githubReleasesFilesAnalysis({ user: "Roubby", repository: "download" }),
@@ -55,35 +55,35 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "测试图片.png": "https://github.com/Roubby/download/releases/download/OpenFile/logo.png",
+        "我好像在哪里见过你.mp3": "https://m801.music.126.net/20240822142156/2f2f98f836d5796ac69dcb5dfcb4921d/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28481681358/3770/e3f9/2670/46767d3133a5fd930d1e6681d50c314f.mp3?authSecret=0000019178a8d7161e4d0a3b201a23bb",
         // "/文件树测试/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
         "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
-    {
-      mountPath: "/开源导航项目",
-      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-      analysis: fileUrlTreeAnalysis({
-        "迷你导航.gz": "https://github.com/Mereithhh/van-nav/releases/download/v1.9.2/van-nav_1.9.2_Windows_x86.tar.gz",
-        "静态导航.zip": "https://github.com/cifaz/nav-site/releases/download/v0.0.18/nav-site_0.0.18_Windows_x86_64.zip",
-        "更多导航.html": "https://gitee.com/xiaohong321/download/releases/download/download/product.html",
-        "说明书1.jpg":"https://gitee.com/xiaohong321/download/releases/download/download/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.jpg",
-        "说明书2.jpg":"https://gitee.com/xiaohong321/download/releases/download/download/%E8%AF%B4%E6%98%8E%E4%B9%A6%20.jpg"
-      }),
-      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
-    },
+    // {
+    //   mountPath: "/开源导航项目",
+    //   // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
+    //   analysis: fileUrlTreeAnalysis({
+    //     "迷你导航.gz": "https://github.com/Mereithhh/van-nav/releases/download/v1.9.2/van-nav_1.9.2_Windows_x86.tar.gz",
+    //     "静态导航.zip": "https://github.com/cifaz/nav-site/releases/download/v0.0.18/nav-site_0.0.18_Windows_x86_64.zip",
+    //     "更多导航.html": "https://gitee.com/xiaohong321/download/releases/download/download/product.html",
+    //     "说明书1.jpg":"https://gitee.com/xiaohong321/download/releases/download/download/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.jpg",
+    //     "说明书2.jpg":"https://gitee.com/xiaohong321/download/releases/download/download/%E8%AF%B4%E6%98%8E%E4%B9%A6%20.jpg"
+    //   }),
+    //   downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
+    // },
     // 以下是没有代理的文件
-    {
-      mountPath: "/",
-      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-      analysis: fileUrlTreeAnalysis({
-        "markdown简单语法.md": "https://gitee.com/xiaohong321/download/releases/download/download/markdown.md",
-        '大数据思维导图.pdf' : 'https://gitee.com/xiaohong321/download/releases/download/download/bigdatqa.pdf',
-        '测试壁纸.jpeg' : 'https://gitee.com/xiaohong321/download/releases/download/download/pexels-photo-2792070.jpeg'
-      }),
-      // downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
-    },
+    // {
+    //   mountPath: "/",
+    //   // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
+    //   analysis: fileUrlTreeAnalysis({
+    //     "markdown简单语法.md": "https://gitee.com/xiaohong321/download/releases/download/download/markdown.md",
+    //     '大数据思维导图.pdf' : 'https://gitee.com/xiaohong321/download/releases/download/download/bigdatqa.pdf',
+    //     '测试壁纸.jpeg' : 'https://gitee.com/xiaohong321/download/releases/download/download/pexels-photo-2792070.jpeg'
+    //   }),
+    //   // downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
+    // },
     // {
     //   mountPath: "/huggingface测试",
     //   analysis: huggingFaceDatasetsAnalysis({
