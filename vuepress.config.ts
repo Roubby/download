@@ -55,18 +55,18 @@ export default defineUserConfig({
       mountPath: "/",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "测试图片.png": "https://github.com/Roubby/download/releases/download/file/pink.png",
+        "测试图片.png": "https://github.com/Roubby/download/releases/download/OpenFile/logo.png",
         // "/文件树测试/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
         "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
     {
-      mountPath: "/",
+      mountPath: "/开源导航项目",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "迷你导航项目.7z": "https://github.com/Roubby/file_download/releases/download/OpenProject/default.7z",
-        // "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
+        "迷你导航.7z": "https://github.com/Roubby/file_download/releases/download/OpenProject/default.7z",
+        "静态导航.7z": "https://github.com/Roubby/file_download/releases/download/OpenProject/van-nav.7z"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
@@ -76,9 +76,10 @@ export default defineUserConfig({
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
         "markdown简单语法.md": "https://gitee.com/xiaohong321/download/releases/download/download/markdown.md",
-        '大数据思维导图.pdf' : 'https://gitee.com/xiaohong321/download/releases/download/download/bigdatqa.pdf'
+        '大数据思维导图.pdf' : 'https://gitee.com/xiaohong321/download/releases/download/download/bigdatqa.pdf',
+        '测试壁纸.jpeg' : 'https://gitee.com/xiaohong321/download/releases/download/download/pexels-photo-2792070.jpeg'
       }),
-      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
+      // downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
     // {
     //   mountPath: "/huggingface测试",
