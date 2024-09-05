@@ -87,13 +87,13 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
     {
-      mountPath: "/",
+      mountPath: "/软件下载",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-
-           "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
-      //      ".mp3": ""
-      //      ".mp3": ""
+           "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
+            "Snipaste-2.9.2-Beta-x64.zip": "https://dl.snipaste.com/win-x64-beta",
+            "Snipaste-1.16.2-x64.zip": "https://dl.snipaste.com/win-x64",
+            "LocalSend-1.15.4-windows":"https://gitee.com/xiaohong321/download/releases/download/download/LocalSend-1.15.4-windows-x86-64.exe"
 
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
