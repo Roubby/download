@@ -93,6 +93,7 @@ export default defineUserConfig({
            "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
             "Snipaste-2.9.2-Beta-x64.zip": "https://dl.snipaste.com/win-x64-beta",
             "Snipaste-1.16.2-x64.zip": "https://dl.snipaste.com/win-x64",
+            "Todesk":"https://dl.todesk.com/windows/ToDesk_Setup.exe",
             "LocalSend-1.15.4-windows":"https://gitee.com/xiaohong321/download/releases/download/download/LocalSend-1.15.4-windows-x86-64.exe"
 
       }),
