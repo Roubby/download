@@ -56,7 +56,7 @@ export default defineUserConfig({
       mountPath: "/SmallTools",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        " compress_picture.7z":"https://gitee.com/xiaohong321/download/releases/download/download/compress_picture.7z"
+        // " compress_picture.7z":"https://gitee.com/xiaohong321/download/releases/download/download/compress_picture.7z"
         // " - 天外来物.mp3" : "https://m801.music.126.net/20240822213736/d0d773629723d5f6a29c2c180c81fc9a/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/25981409748/cd40/0fa2/f472/974fdfde535427de9ff6562124722d5c.mp3?authSecret=000001917a37b2f712710a3b201726ba",
         // " - 演员.mp3" : "https://m801.music.126.net/20240822213739/e0014bd2da7826ff708b95dd8d335fbb/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28481681523/a777/e66c/684b/077b8e3242636865d62c852761ca654b.mp3?authSecret=000001917a37bf220aa20a3b201202dc",
         // " - 陪你去流浪.mp3" : "https://m801.music.126.net/20240822213741/52c14adb691c5ef9519102f49d18f130/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096608584/66c7/c013/3f5d/d16fd77296c03021fb3de5c5944f8b44.mp3?authSecret=000001917a37c8c81f2c0a3b201726ba",
@@ -93,7 +93,7 @@ export default defineUserConfig({
            "测试视频.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
             "Snipaste-2.9.2-Beta-x64.zip": "https://dl.snipaste.com/win-x64-beta",
             "Snipaste-1.16.2-x64.zip": "https://dl.snipaste.com/win-x64",
-            "Todesk":"https://dl.todesk.com/windows/ToDesk_Setup.exe",
+            "Todesk.exe":"https://dl.todesk.com/windows/ToDesk_Setup.exe",
             "LocalSend-1.15.4-windows":"https://gitee.com/xiaohong321/download/releases/download/download/LocalSend-1.15.4-windows-x86-64.exe"
 
       }),
