@@ -99,6 +99,17 @@ export default defineUserConfig({
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     },
+    {
+      mountPath:"/",
+      analysis:giteeReleasesFilesAnalysis({
+        user:"xiaohong321",
+        repository:"flist",
+        direction: 'asc', //排序
+        access_token: '8dced55e220471da76b5371f508d3c84', //用户token
+        // page: 0, //第几页
+        per_page: 20 //一页显示多少个
+      })
+    }
     // 以下是没有代理的文件
     // {
     //   mountPath: "/",
